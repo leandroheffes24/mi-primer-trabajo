@@ -1,5 +1,10 @@
+import Header from "./components/header/header";
+
 export default function Home() {
   return (
-    <div>mi primer trabajo</div>
+    <>
+      <Header/>
+      <div>mi primer trabajo</div>
+    </>
   );
 }
