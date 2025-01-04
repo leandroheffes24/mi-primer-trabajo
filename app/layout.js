@@ -4,6 +4,9 @@ import { openSans } from '@/public/fonts/fonts';
 export const metadata = {
   title: "Mi Primer Trabajo",
   description: "Entrá al mundo laboral por primera vez, no necesitas experiencia previa. Todos en algún momento comenzamos de cero.",
+  icons: {
+    icon: '/favicon.ico',
+  }
 };
 
 export default function RootLayout({ children }) {

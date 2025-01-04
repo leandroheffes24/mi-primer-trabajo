@@ -1,0 +1,75 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f3f4f2;
+  box-shadow: 0 0 0 3000px rgba(0, 0, 0, 0.3);
+  padding: 20px 20px 30px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.closeMobileNavbarButton {
+  background: none;
+  border: none;
+  color: #223147;
+}
+
+.closeMobileNavbarIcon {
+  width: 27px;
+}
+
+.navbarList {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto 0;
+}
+
+.loginNavbarItem, .registerNavbarItem {
+  width: 47%;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 6px 0;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.loginNavbarItem {
+  background: linear-gradient(90deg, #3777fc 40%, #00e8eb 100%);
+}
+
+.loginLink, .registerLink {
+  text-decoration: none;
+}
+
+.loginLink {
+  color: #f3f4f2;
+}
+
+.registerLink {
+  color: #223147;
+}
+
+@media (width >= 768px) {
+  .navbar {
+    padding: 20px 20px 30px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+  }
+  .closeMobileNavbarIcon {
+    width: 35px;
+  }
+  .navbarList {
+    margin: 50px auto 0;
+  }
+  .loginNavbarItem, .registerNavbarItem {
+    width: 48%;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    padding: 8px 0;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+  }
+}/*# sourceMappingURL=mobileNavbar.module.css.map */
