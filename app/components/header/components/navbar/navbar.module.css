@@ -41,6 +41,19 @@
   background: linear-gradient(90deg, #3777fc 40%, #00e8eb 100%);
 }
 
+.loginNavbarItem:hover {
+  background: linear-gradient(90deg, #2b5dc9 40%, #04babd 100%);
+}
+
+.registerNavbarItem {
+  transition: all 0.3s;
+}
+
+.registerNavbarItem:hover {
+  background-color: #ebebeb;
+  transition: all 0.3s;
+}
+
 .loginLink, .registerLink {
   text-decoration: none;
 }

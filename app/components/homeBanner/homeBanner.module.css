@@ -1,0 +1,26 @@
+.homeBannerSection {
+  height: 500px;
+  position: relative;
+}
+
+.homeBanner {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+
+.searchInputContainer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.homeSearchInput {
+  border: 1px solid greenyellow;
+  margin: auto;
+}/*# sourceMappingURL=homeBanner.module.css.map */
