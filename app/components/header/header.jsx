@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import styles from './header.module.css'
 import Logo from '@/public/images/logo.webp'
-import MobileNavbar from './components/mobileNavbar/mobileNavbar'
+import Navbar from './components/navbar/Navbar'
 import { useEffect, useState } from 'react'
 
 export default function Header() {
@@ -32,8 +32,8 @@ export default function Header() {
                 </a>
             </div>
 
-            <button className={styles.openMobileNavbarButton} onClick={toggleNavbar}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className={styles.openMobileNavbarIcon}>
+            <button className={styles.openNavbarButton} onClick={toggleNavbar}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className={styles.openNavbarIcon}>
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M4 6l16 0" />
                     <path d="M4 12l16 0" />
@@ -41,7 +41,7 @@ export default function Header() {
                 </svg>
             </button>
 
-            {isNavbarOpen && <MobileNavbar toggleNavbar={toggleNavbar} />}
+            {isNavbarOpen && <Navbar toggleNavbar={toggleNavbar} />}
         </header>
     )
 }

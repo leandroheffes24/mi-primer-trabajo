@@ -24,12 +24,12 @@
     height: auto;
 }
 
-.openMobileNavbarButton{
+.openNavbarButton{
     background: none;
     border: none;
 }
 
-.openMobileNavbarIcon{
+.openNavbarIcon{
     width: 35px;
     color: $azulClaro;
 }
@@ -46,7 +46,7 @@
         width: 28%;
     }
 
-    .openMobileNavbarIcon{
+    .openNavbarIcon{
         width: 50px;
     }
 }
@@ -63,7 +63,7 @@
         width: 13%;
     }
 
-    .openMobileNavbarButton{
+    .openNavbarButton{
         display: none;
     }
 }

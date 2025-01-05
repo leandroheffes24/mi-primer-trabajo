@@ -1,9 +1,9 @@
 'use client'
-import styles from './mobileNavbar.module.css'
+import styles from './navbar.module.css'
 
-export default function MobileNavbar({toggleNavbar}) {
+export default function Navbar({toggleNavbar}) {
     return (
-        <navbar className={styles.navbar}>
+        <nav className={styles.navbar}>
             <button className={styles.closeMobileNavbarButton} onClick={toggleNavbar}>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className={styles.closeMobileNavbarIcon}>
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -20,6 +20,6 @@ export default function MobileNavbar({toggleNavbar}) {
                     <a href="#" className={styles.registerLink}>Registrarse</a>
                 </li>
             </ul>
-        </navbar>
+        </nav>
     )
 }
