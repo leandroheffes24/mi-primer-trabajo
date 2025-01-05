@@ -3,10 +3,18 @@ import Image from 'next/image'
 import styles from './header.module.css'
 import Logo from '@/public/images/logo.webp'
 import MobileNavbar from './components/mobileNavbar/mobileNavbar'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function Header() {
-    const [isNavbarOpen, setIsNavbarOpen] = useState(false)
+    const [isNavbarOpen, setIsNavbarOpen] = useState()
+
+    useEffect(() => {
+        if (screen.width >= 992) {
+            setIsNavbarOpen(true)
+        } else {
+            setIsNavbarOpen(false)
+        }
+    }, [])
 
     const toggleNavbar = () => {
         setIsNavbarOpen(!isNavbarOpen)

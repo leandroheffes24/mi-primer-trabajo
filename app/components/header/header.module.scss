@@ -50,3 +50,30 @@
         width: 50px;
     }
 }
+
+@media(width>=992px){
+    .header{
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        padding: 15px 40px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .logoContainer{
+        width: 13%;
+    }
+
+    .openMobileNavbarButton{
+        display: none;
+    }
+}
+
+@media(width>=1200px){
+    .header{
+        padding: 15px 60px;
+    }
+
+    .logoContainer{
+        width: 11%;
+    }
+}
