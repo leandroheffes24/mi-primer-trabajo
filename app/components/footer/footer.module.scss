@@ -1,0 +1,165 @@
+@import '../../styles/variables.scss';
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    padding: 30px;
+}
+
+.socialNetworksContainer{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialNetworkContainer{
+    background-color: $azulOscuro;
+    color: $blanco;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.socialNetworkContainer:hover{
+    background-color: $azulClaro;
+    transition: all .3s;
+}
+
+.socialNetworkIcon{
+    width: 22px;
+}
+
+.informationLinksContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.informationLink{
+    text-decoration: none;
+    color: $azulOscuro;
+    font-size: .95rem;
+}
+
+.developerAndCopyrightContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #4f5968;
+}
+
+.copyrightText, .developerText{
+    font-size: .85rem;
+}
+
+.developerLink{
+    text-decoration: none;
+    color: $azulOscuro;
+    font-weight: 600;
+}
+
+@media(width>=768px){
+    .footer{
+        gap: 80px;
+        padding: 50px;
+    }
+
+    .socialNetworksContainer{
+        width: 40%;
+    }
+
+    .socialNetworkContainer{
+        padding: 8px;
+    }
+
+    .socialNetworkIcon{
+        width: 27px;
+    }
+
+    .informationLinksContainer{
+        gap: 20px;
+    }
+
+    .informationLink{
+        font-size: 1.3rem;
+    }
+
+    .developerAndCopyrightContainer{
+        gap: 15px;
+    }
+
+    .copyrightText, .developerText{
+        font-size: 1.15rem;
+    }
+}
+
+@media(width>=992px){
+    .footer{
+        padding: 70px;
+        gap: 90px;
+    }
+
+    .socialNetworksContainer{
+        width: 30%;
+    }
+
+    .socialNetworkContainer{
+        padding: 5px;
+    }
+
+    .socialNetworkIcon{
+        width: 20px;
+    }
+
+    .informationLinksContainer{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: unset;
+        width: 80%;
+        margin: auto;
+    }
+
+    .informationLink{
+        font-size: .95rem;
+    }
+
+    .developerAndCopyrightContainer{
+        flex-direction: row;
+        width: 80%;
+        margin: auto;
+        justify-content: space-around;
+    }
+
+    .copyrightText, .developerText{
+        font-size: .8rem;
+    }
+}
+
+@media(width>=1200px){
+    .footer{
+        padding: 80px;
+        gap: 110px;
+    }
+
+    .socialNetworkContainer{
+        padding: 7px;
+    }
+
+    .socialNetworkIcon{
+        width: 23px;
+    }
+
+    .informationLink{
+        font-size: 1rem;
+    }
+
+    .copyrightText, .developerText{
+        font-size: .85rem;
+    }
+}
