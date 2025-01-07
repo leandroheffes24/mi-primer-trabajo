@@ -1,26 +1,131 @@
 .homeBannerSection {
   height: 500px;
   position: relative;
+  background: linear-gradient(90deg, rgb(55, 119, 252) 0%, rgb(0, 232, 235) 100%);
 }
 
-.homeBanner {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.homeBackgroundImage {
   position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 270px;
+  height: auto;
+  transform: translate(-50%);
 }
 
-.searchInputContainer {
+.searchForm {
   position: absolute;
   top: 0;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  border: 1px solid red;
+  gap: 20px;
+  padding-top: 40px;
 }
 
-.homeSearchInput {
-  border: 1px solid greenyellow;
-  margin: auto;
+.searchInputContainer {
+  background-color: #f3f4f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  width: 80%;
+  padding: 7px;
+}
+
+.homeSearchInputIcon, .homeProvincesSelectIcon {
+  width: 9%;
+}
+
+.homeSearchInput, .homeProvincesSelect {
+  width: 87%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.searchButton {
+  width: 80%;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  border: none;
+  padding: 7px;
+  background-color: #00e8eb;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+@media (width >= 768px) {
+  .homeBannerSection {
+    height: 700px;
+  }
+  .homeBackgroundImage {
+    width: 380px;
+  }
+  .searchForm {
+    gap: 30px;
+    padding-top: 60px;
+  }
+  .searchInputContainer {
+    width: 70%;
+    padding: 10px;
+  }
+  .homeSearchInputIcon, .homeProvincesSelectIcon {
+    width: 6%;
+  }
+  .homeSearchInput, .homeProvincesSelect {
+    width: 90%;
+    font-size: 1.4rem;
+  }
+  .searchButton {
+    width: 70%;
+    font-size: 1.4rem;
+    padding: 10px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+@media (width >= 992px) {
+  .homeBannerSection {
+    height: 450px;
+  }
+  .homeBackgroundImage {
+    bottom: auto;
+    left: auto;
+    right: 0;
+    height: 100%;
+    transform: none;
+    width: auto;
+  }
+  .searchForm {
+    justify-content: center;
+    width: 54%;
+    height: 100%;
+    gap: 30px;
+    padding: 0;
+  }
+  .searchInputContainer {
+    width: 65%;
+  }
+  .homeSearchInput, .homeProvincesSelect {
+    font-size: 1rem;
+  }
+  .searchButton {
+    width: 65%;
+    font-size: 1rem;
+  }
+}
+@media (width >= 1200px) {
+  .homeBannerSection {
+    height: 550px;
+  }
+  .homeSearchInput, .homeProvincesSelect {
+    font-size: 1rem;
+  }
+  .searchButton {
+    font-size: 1rem;
+    padding: 13px;
+  }
 }/*# sourceMappingURL=homeBanner.module.css.map */
