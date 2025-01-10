@@ -35,13 +35,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .informationLink {
   text-decoration: none;
   color: #223147;
   font-size: 0.95rem;
+}
+
+.separator {
+  background-color: #e4e4e4;
+  width: 100%;
+  height: 2px;
 }
 
 .developerAndCopyrightContainer {
@@ -91,8 +97,8 @@
 }
 @media (width >= 992px) {
   .footer {
-    padding: 70px;
-    gap: 90px;
+    padding: 50px 50px 30px;
+    gap: 70px;
   }
   .socialNetworksContainer {
     width: 30%;
@@ -125,8 +131,8 @@
 }
 @media (width >= 1200px) {
   .footer {
-    padding: 80px;
-    gap: 110px;
+    padding: 65px 65px 30px;
+    gap: 100px;
   }
   .socialNetworkContainer {
     padding: 7px;

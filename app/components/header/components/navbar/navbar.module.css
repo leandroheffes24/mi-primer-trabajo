@@ -23,8 +23,27 @@
 .navbarList {
   list-style: none;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  margin: 30px auto 0;
+  margin: 20px auto 0;
+  gap: 35px;
+}
+
+.navbarItems {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navbarLink {
+  text-decoration: none;
+  color: #223147;
+}
+
+.loginAndRegisterNavbarContainer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .loginNavbarItem, .registerNavbarItem {
@@ -76,7 +95,14 @@
     width: 35px;
   }
   .navbarList {
-    margin: 50px auto 0;
+    margin: 30px auto 0;
+    gap: 85px;
+  }
+  .navbarItems {
+    gap: 40px;
+  }
+  .navbarLink {
+    font-size: 1.4rem;
   }
   .loginNavbarItem, .registerNavbarItem {
     width: 48%;
@@ -102,18 +128,39 @@
   }
   .navbarList {
     margin: 0;
+    flex-direction: row;
+    gap: unset;
+  }
+  .navbarItems {
+    width: 55%;
+    gap: 50px;
+    flex-direction: row;
+  }
+  .navbarLink {
+    font-size: 0.85rem;
+  }
+  .loginAndRegisterNavbarContainer {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
   }
   .loginNavbarItem, .registerNavbarItem {
     cursor: pointer;
-    width: 25%;
+    width: 45%;
     font-size: 0.8rem;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
     padding: 5px 0;
   }
 }
 @media (width >= 1200px) {
+  .navbarItems {
+    gap: 70px;
+  }
+  .navbarLink {
+    font-size: 0.9rem;
+  }
   .loginNavbarItem, .registerNavbarItem {
-    width: 20%;
+    width: 45%;
     font-size: 0.9rem;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
     padding: 7px 0;

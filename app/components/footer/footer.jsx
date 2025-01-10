@@ -67,6 +67,8 @@ export default function Footer(){
                 </Link>
             </div>
 
+            <div className={styles.separator}></div>
+
             <div className={styles.developerAndCopyrightContainer}>
                 <span className={styles.copyrightText}>© Copyright 2025-<span id='current-year'></span></span>
                 <span className={styles.developerText}>Sitio web desarrollado por <Link href='https://www.leandroheffes.com.ar/' className={styles.developerLink}>Leandro Heffes</Link></span>

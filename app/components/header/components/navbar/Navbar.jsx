@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import styles from './navbar.module.css'
 
 export default function Navbar({toggleNavbar}) {
@@ -13,12 +14,42 @@ export default function Navbar({toggleNavbar}) {
             </button>
 
             <ul className={styles.navbarList}>
-                <li className={styles.loginNavbarItem}>
-                    <a href="#" className={styles.loginLink}>Ingresar</a>
-                </li>
-                <li className={styles.registerNavbarItem}>
-                    <a href="#" className={styles.registerLink}>Registrarse</a>
-                </li>
+                <div className={styles.navbarItems}>
+                    <li className={styles.navbarItem}>
+                        <Link
+                            href='/'
+                            className={styles.navbarLink}
+                        >
+                            Buscar ofertas
+                        </Link>
+                    </li>
+                    <li className={styles.navbarItem}>
+                        <Link
+                            href="/"
+                            className={styles.navbarLink}
+                        >
+                            Salarios
+                        </Link>
+                    </li>
+                </div>
+                <div className={styles.loginAndRegisterNavbarContainer}>
+                    <li className={styles.loginNavbarItem}>
+                        <Link
+                            href="#"
+                            className={styles.loginLink}
+                        >
+                            Ingresar
+                        </Link>
+                    </li>
+                    <li className={styles.registerNavbarItem}>
+                        <Link
+                            href="#"
+                            className={styles.registerLink}
+                        >
+                            Registrarse
+                        </Link>
+                    </li>
+                </div>
             </ul>
         </nav>
     )
